@@ -28,6 +28,43 @@
   color: #61dafb;
 }
 
+/* nav styles */
+
+.navigation {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0.5rem 0rem;
+  background-color: #fff;
+  color: black;
+  box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
+}
+
+.brand-name {
+  text-decoration: none;
+  color: black;
+  font-size: 1.3rem;
+  margin-left: 1rem;
+}
+.navigation-menu ul {
+  display: flex;
+  padding: 0;
+}
+.navigation-menu li {
+  list-style-type: none;
+  margin: 0 1rem;
+}
+.navigation-menu li a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+}
+.navigation-menu {
+  margin-left: auto;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +72,209 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* here form style */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #949494;
+}
+
+.containerBody {
+  max-width: 500px;
+  margin: 30px auto;
+  overflow: auto;
+  min-height: 300px;
+  border: 1px solid steelblue;
+  padding: 30px;
+  border-radius: 5px;
+  background-color: #f1eef1;
+}
+
+
+.btn {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.task {
+  background: #f4f4f4;
+  margin: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.task.reminder {
+  border-left: 5px solid green;
+}
+
+.task h3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.add-form {
+  margin-bottom: 40px;
+}
+
+.form-control {
+  margin: 20px 0;
+}
+
+.form-control label {
+  display: block;
+}
+
+.form-control input {
+  width: 100%;
+  height: 40px;
+  margin: 5px;
+  padding: 3px 7px;
+  font-size: 17px;
+}
+
+.form-control-check {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-control-check label {
+  flex: 1;
+}
+
+.form-control-check input {
+  flex: 2;
+  height: 20px;
+}
+
+footer {
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* here card style */
+.data-card {
+  display: block;
+  min-height:150px;
+  width:90%;
+  margin:30px auto;
+  border-radius: .5em;
+  text-decoration: none;
+  background: rgb(249, 247, 247);
+  padding: 2.75em 2.5em;
+  box-shadow: 0 1.5em 2.5em -.5em rgba(#000000, .1);
+  transition: transform .45s ease, background .45s ease;}
+  
+.data-card h3 {
+  color: #2E3C40;
+  font-size: 2.0em;
+  font-weight: 600;
+  line-height: 1;
+  padding-bottom: .5em;
+  margin: 0 0 0.142857143em;
+  border-bottom: 2px solid #a8a8a8;
+  transition: color .45s ease, border .45s ease;
+}
+
+.data-card h4 {
+  color: #627084;
+  text-transform: uppercase;
+  font-size: 1.125em;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  margin: 0 0 1.777777778em;
+  transition: color .45s ease;
+}
+
+.data-card p {
+  opacity: 0;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size:20px;
+  line-height: 1.8;
+  margin: 0 0 1.25em;
+  transform: translateY(-1em);
+  transition: opacity .45s ease, transform .5s ease;
+}
+.data-card span {
+  margin-top:100px;
+  }
+
+.link-text {
+  display: block;
+  color: #be2b2b;
+  font-size: 1.125em;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: auto 0 0;
+  transition: color .45s ease;}
+   
+.data-card:hover {
+  background: #373738;
+  transform: scale(1.02);}
+    
+.data-card:hover h3 {
+  color: #FFFFFF;
+  border-bottom-color: #f1eef1;
+}
+
+.data-card:hover h4 {
+  color: #FFFFFF;
+}
+
+.data-card:hover p {
+  opacity: 1;
+  transform: none;
+}
+
+.data-card:hover .link-text {
+  color: #e03333;}
+  
+i.fa-arrow-right {
+  margin-left:20px;
+   margin-top:9px;
+}
+    
+@keyframes point {
+  0% {
+   transform: translateX(0);
+  }
+  100% {
+    transform: translateX(.125em);
+  }
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
 }
